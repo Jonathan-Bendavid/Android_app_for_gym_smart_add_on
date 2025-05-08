@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".SetsActivity">
+
+    <!-- Set Date -->
+    <TextView
+        android:id="@+id/ExerciseDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14sp"
+        android:layout_marginStart="14sp" />
+
+    <!-- Exercise Name -->
+    <TextView
+        android:id="@+id/ExerciseNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48sp"
+        android:layout_marginStart="14sp" />
+
+    <!-- Back Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="right"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goToWorkoutDetailsActivity"
+        android:backgroundTint="@color/button_primary"/>
+
+    <!-- Collapsing Toolbar -->
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsingToolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:collapsedTitleTextColor="@android:color/white"
+        app:expandedTitleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:title="Set Data" />
+
+    <!-- RecyclerView for Sets -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/setsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:clipToPadding="false"
+        android:paddingBottom="65dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- Include Toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="20dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exerciseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/exercise"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start"/>
+
+        <!-- Sets -->
+        <TextView
+            android:id="@+id/exerciseTipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="exercise_tip"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!-- Sets -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sets:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/setsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sets"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Weight -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/weightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Average Reps -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Reps:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/Avg_RepsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reps"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!-- Overall time -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Time:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/OverallTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Overall TUT -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall TUT:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/OverallTutTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Heart Rate -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Heart Rate:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/HeartRateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rate"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Overall performance score -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Performance Score:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/OverallPerScoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="score"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Overall variability score -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall Variability Score:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:id="@+id/OverallVarScoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="score"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Range of Motion -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Range Of Motion:"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="12dp"/>
+            <TextView
+                android:id="@+id/ROMTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rom"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/performanceChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/go_to_sets"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="@string/more_data"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/button_primary"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

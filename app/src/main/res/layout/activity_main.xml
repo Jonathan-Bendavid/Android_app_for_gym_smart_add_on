@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar with User Email and Logout button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Logout Button at the right -->
+        <TextView
+            android:id="@+id/user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/username"
+            android:textColor="#696969"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4sp"/>
+
+        <TextView
+            android:id="@+id/workout_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workout_level"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/workout_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workout_count"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="68dp"
+            />
+
+        <!-- ImageView for icon between text and button -->
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="135sp"
+            android:src="@drawable/icon"
+            android:contentDescription="icon_description"/>
+
+        <Button
+            android:text="@string/logout"
+            android:id="@+id/logout"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="265sp"
+            android:layout_marginTop="28sp"
+            android:backgroundTint="@color/button_primary"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Daily_TipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/daily_tip"
+        android:textColor="#696969"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/monthly_performance_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="average monthly percentage"
+        android:textColor="#696969"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="4sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Monthly Performance Chart -->
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/monthlyChart"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        />
+
+    <TextView
+        android:id="@+id/AmongTheTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Are Among The Top 20%"
+        android:textColor="#696969"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="4sp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/ThisMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Of Users This month"
+        android:textColor="#696969"
+        android:lineSpacingExtra="4sp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Include Toolbar -->
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

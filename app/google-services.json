@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "339401547875",
+    "firebase_url": "https://jbdb-21-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "jbdb-21",
+    "storage_bucket": "jbdb-21.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339401547875:android:1032faa9908f8eaae0d856",
+        "android_client_info": {
+          "package_name": "com.example.GymFiTech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2MERqsqA58rsXNDKBZ3dJnItSaiWreig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

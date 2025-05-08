@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WorkoutDetailsActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workout Date"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14sp"
+        android:layout_marginStart="14sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="right"
+        android:layout_marginEnd="12dp"
+        android:onClick="goToWorkoutDataActivity"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/button_primary"
+        />
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsingToolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:collapsedTitleTextColor="@android:color/white"
+        app:expandedTitleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:title="Workout Data">
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exerciseRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="65sp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

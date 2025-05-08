@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Set Date -->
+    <TextView
+        android:id="@+id/ExerciseDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14sp"
+        android:padding="16dp"
+         />
+
+    <!-- Exercise Name -->
+    <TextView
+        android:id="@+id/ExerciseNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48sp"
+        android:padding="16dp"/>
+
+    <!-- Set number -->
+    <TextView
+        android:id="@+id/setNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="75dp"
+        android:padding="16dp"/>
+
+    <!-- Back Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="right"
+        android:layout_marginEnd="18dp"
+        android:onClick="goToWorkoutDetailsActivity"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/button_primary"
+        android:textColor="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="65dp"/>
+
+    <!-- Include Toolbar -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

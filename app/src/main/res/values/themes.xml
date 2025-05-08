@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.MyApplication111" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/menu1</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Secondary (accent) colors - important! -->
+        <item name="colorSecondary">@color/menu1</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorOnBackground">@android:color/black</item>
+        <item name="colorOnSurface">@android:color/black</item>
+    </style>
+
+    <style name="Theme.MyApplication111" parent="Base.Theme.MyApplication111" />
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

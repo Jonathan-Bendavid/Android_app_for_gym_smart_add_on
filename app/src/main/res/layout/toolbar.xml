@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Toolbar at the bottom -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/menu1"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <!-- LinearLayout to arrange buttons equally spaced -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:gravity="center">
+
+            <!-- Person icon button -->
+            <ImageButton
+                android:id="@+id/person_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:src="@drawable/person1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/profile_icon"
+                android:onClick="goToProfilePage"/>
+
+            <!-- Home button with text -->
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="goToMainActivity"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- Dumbbell icon button -->
+            <ImageButton
+                android:id="@+id/dumbbell_icon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:src="@drawable/dumbbell1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/dumbbell_icon"
+                android:scaleType="centerInside"
+                android:onClick="goToWorkoutDataActivity"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

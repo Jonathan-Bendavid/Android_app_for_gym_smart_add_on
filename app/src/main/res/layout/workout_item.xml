@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:backgroundTint="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Date Header -->
+        <TextView
+            android:id="@+id/workoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout Date"
+            android:textSize="22sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <!-- Avg HeartRate Text -->
+        <TextView
+            android:id="@+id/avgHeartRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg HeartRate"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Avg Performance Score Text -->
+        <TextView
+            android:id="@+id/avgPerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg Performance score"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Avg Variability Score Text -->
+        <TextView
+            android:id="@+id/avgVarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg Variability score"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+        <!-- Go to Workout Button -->
+        <Button
+            android:id="@+id/go_to_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/go_to_workout"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="240sp"
+            android:backgroundTint="@color/button_primary"/>
+
+</androidx.cardview.widget.CardView>
